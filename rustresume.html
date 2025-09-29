@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karl Fox // Ethical Hacker & Systems Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #2F241F; /* Deep Autumn Brown */
+            color: #E0C8A9; /* Muted Gold/Cream */
+        }
+        .font-tech {
+            font-family: 'Share Tech Mono', monospace;
+        }
+        .resume-container {
+            border: 2px solid #BC472C; /* Rust Orange */
+            box-shadow: 0 0 25px rgba(188, 71, 44, 0.6);
+            background: linear-gradient(rgba(47, 36, 31, 0.95), rgba(47, 36, 31, 0.95));
+        }
+        .section-title, .job-title-main {
+            color: #D18D3C; /* Burnt Orange */
+            text-shadow: 0 0 5px rgba(209, 141, 60, 0.7);
+        }
+        .section-title {
+            border-bottom: 1px solid #D18D3C;
+            display: inline-block;
+            padding-bottom: 4px;
+            margin-bottom: 1rem;
+        }
+        .header-decoration {
+            border-top: 1px solid #BC472C;
+            border-bottom: 1px solid #BC472C;
+            padding: 8px 0;
+            margin: 16px 0;
+        }
+        h1, h2, h3, h4 {
+            font-weight: 600;
+        }
+        strong, .job-title-professional {
+            color: #F8F4E3; /* Off-White */
+        }
+        .profile-pic {
+            border-radius: 50%;
+            border: 3px solid #BC472C;
+            box-shadow: 0 0 15px rgba(188, 71, 44, 0.8);
+        }
+        .gemini-btn {
+            background-color: #BC472C;
+            color: #2F241F;
+            font-family: 'Share Tech Mono', monospace;
+            padding: 6px 12px;
+            border: 1px solid #BC472C;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(188, 71, 44, 0.5);
+        }
+        .gemini-btn:hover {
+            background-color: #2F241F;
+            color: #BC472C;
+        }
+        .modal-overlay {
+            background-color: rgba(47, 36, 31, 0.8);
+            backdrop-filter: blur(5px);
+        }
+        .modal-content {
+            background-color: #2F241F;
+            border: 2px solid #D18D3C;
+            box-shadow: 0 0 25px rgba(209, 141, 60, 0.4);
+        }
+        .modal-input {
+            background-color: rgba(209, 141, 60, 0.1);
+            border: 1px solid #D18D3C;
+            color: #F8F4E3;
+        }
+        .blinking-cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2rem;
+            background-color: #E0C8A9;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            from, to { background-color: transparent }
+            50% { background-color: #E0C8A9; }
+        }
+        .contact-link {
+            color: #E0C8A9;
+            text-decoration: none;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+        .contact-link:hover {
+            color: #D18D3C;
+            text-shadow: 0 0 5px rgba(209, 141, 60, 0.7);
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+    <div class="max-w-4xl mx-auto bg-transparent p-6 sm:p-10 rounded-lg resume-container">
+        <header class="flex flex-col sm:flex-row items-center pb-6 border-b-2 border-[#BC472C]">
+            <img src="https://placehold.co/128x128/2F241F/F8F4E3?text=KF" class="profile-pic w-28 h-28 sm:w-32 sm:h-32 object-cover" alt="Profile Picture of Karl Fox" onerror="this.onerror=null;this.src='https://placehold.co/128x128/2F241F/F8F4E3?text=KF';">
+            <div class="text-center sm:text-left sm:ml-8 mt-4 sm:mt-0">
+                <h1 class="font-tech text-4xl sm:text-5xl tracking-wider text-shadow">KARL FOX</h1>
+                <h2 class="text-xl sm:text-2xl font-semibold mt-2 job-title-main">ETHICAL HACKER // SYSTEMS ENGINEER</h2>
+                <div class="header-decoration mt-4 text-xs sm:text-sm">
+                    <p>> <a href="https://www.linkedin.com/in/karlfoxSysEngineer" target="_blank" class="contact-link">linkedin.com/in/karlfoxSysEngineer</a> | <a href="mailto:kfoxirl@gmail.com" class="contact-link">kfoxirl@gmail.com</a> | 919-453-8267</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <aside class="md:col-span-1">
+                <section>
+                    <h3 class="font-tech text-2xl section-title">EDUCATION & CERTIFICATIONS</h3>
+                    <ul class="space-y-3 text-sm mt-4">
+                        <li><strong>Education Focus:</strong> B.S. Cybersecurity & Information Assurance</li>
+                        <li><strong>CompTIA A+</strong> Certified</li>
+                        <li><strong>Red Hat</strong> Certified System Administrator</li>
+                        <li><strong>Visual C#</strong> Programming Certification</li>
+                        <li><strong>B.A.</strong> Creative Multimedia with Communications</li>
+                    </ul>
+                </section>
+
+                <section class="mt-8">
+                    <h3 class="font-tech text-2xl section-title">TECHNICAL SKILLS</h3>
+                    <div class="text-sm mt-4 space-y-3">
+                        <p><strong>Languages:</strong> C#, Python, Bash, PowerShell, SQL</p>
+                        <p><strong>LLM & AI:</strong> LangChain, Ollama, Vector DBs (Chroma)</p>
+                        <p><strong>Virtualization:</strong> VMware, Hyper-V, KVM</p>
+                        <p><strong>Containers:</strong> Docker, Kubernetes</p>
+                        <p><strong>Cloud Platforms:</strong> Nextcloud, eHealth VNAS</p>
+                        <p><strong>Medical Tech:</strong> PACS, DICOM, HL7</p>
+                        <p><strong>Network Analysis:</strong> Wireshark, TCPDump, pfSense</p>
+                        <p><strong>OS & Server:</strong> MS Server (2003-2019), Linux (RHEL, Debian)</p>
+                    </div>
+                </section>
+            </aside>
+
+            <div class="md:col-span-2">
+                <section>
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-tech text-2xl section-title">PROFESSIONAL SUMMARY</h3>
+                    </div>
+                    <div id="professional-summary">
+                        <p class="text-sm leading-relaxed">
+                            An EU ex-pat and seasoned systems engineer with 18 years of experience in the high-stakes, compliance-driven field of medical IT. Proven ability to architect, maintain, and troubleshoot complex systems while leading high-performing support teams. My career is rooted in a deep respect for data integrity, governed by the rigorous standards of HIPAA and GDPR.
+                        </p>
+                        <p class="text-sm leading-relaxed mt-4">
+                            I am now strategically pivoting my extensive technical background to specialize in Ethical Hacking and AI security. My goal is to leverage nearly two decades of systems expertise to proactively identify and mitigate vulnerabilities, moving from reactive problem-solving to offensive security.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="mt-8">
+                    <h3 class="font-tech text-2xl section-title">PROFESSIONAL EXPERIENCE</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-bold job-title-professional">Staff Systems Engineer</h4>
+                            <p class="text-sm font-semibold">Siemens Healthineers | 2018 – Present</p>
+                            <p class="text-xs mt-1">Acted as the highest tier of technical support, resolving complex system incidents under strict SLAs. Interfaced directly with R&D to address core product issues and served as a subject matter expert and mentor for colleagues.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold job-title-professional">Senior Systems Engineer</h4>
+                            <p class="text-sm font-semibold">Siemens Healthineers | 2013 – 2018</p>
+                            <p class="text-xs mt-1">Led complex technical initiatives to optimize internal processes and enhance customer satisfaction. Engineered and implemented efficient workflows and custom integrations, independently resolving system anomalies.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold job-title-professional">Product Quality Lead</h4>
+                            <p class="text-sm font-semibold">Hill-Rom IT Solutions | 2011 – 2013</p>
+                            <p class="text-xs mt-1">Managed a. remote customer support team, triaged complex technical issues, and collaborated with engineering on product development and defect mitigation for live customer systems.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold job-title-professional">Product Quality Analyst</h4>
+                            <p class="text-sm font-semibold">Hill-Rom IT Solutions | 2010 – 2011</p>
+                            <p class="text-xs mt-1">Provided advanced technical support to internal and external teams. Documented product defects and solutions and developed SQL scripts and tools to improve team efficiency and performance.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="text-center mt-8 pt-4 border-t-2 border-[#BC472C]">
+             <button id="signal-message-btn" class="gemini-btn">✨ Send Secure Message</button>
+             <button id="download-pdf-btn" class="gemini-btn ml-2">📄 Download as PDF</button>
+            <p class="text-xs italic mt-4">> References available upon request</p>
+        </footer>
+
+    </div>
+
+    <div id="signal-modal" class="fixed inset-0 z-50 items-center justify-center hidden modal-overlay">
+        <div class="modal-content p-6 rounded-lg max-w-lg w-full">
+            <h3 class="font-tech text-2xl section-title">Send a Secure Message via Signal</h3>
+            <p class="text-sm mt-2 mb-4">This will open a pre-filled Signal chat in a new tab.</p>
+            <textarea id="signal-message-input" rows="4" placeholder="Your message..." class="w-full p-2 rounded modal-input"></textarea>
+            <div class="mt-4 flex justify-end space-x-2">
+                <button id="signal-close-btn" class="gemini-btn">Close</button>
+                <button id="signal-send-btn" class="gemini-btn">Send Message</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Signal Message Logic ---
+            const signalModal = document.getElementById('signal-modal');
+            const signalMessageBtn = document.getElementById('signal-message-btn');
+            const signalCloseBtn = document.getElementById('signal-close-btn');
+            const signalSendBtn = document.getElementById('signal-send-btn');
+            const signalMessageInput = document.getElementById('signal-message-input');
+
+            signalMessageBtn.addEventListener('click', () => {
+                signalModal.style.display = 'flex';
+            });
+            signalCloseBtn.addEventListener('click', () => {
+                signalModal.style.display = 'none';
+            });
+            signalSendBtn.addEventListener('click', () => {
+                const message = signalMessageInput.value;
+                const encodedMessage = encodeURIComponent(message);
+                const signalUsername = "kfoxirl.90"; // Your Signal Username
+                const signalLink = `https://signal.me/#u/${signalUsername}?text=${encodedMessage}`;
+                window.open(signalLink, '_blank');
+                signalModal.style.display = 'none';
+            });
+
+            // --- PDF Download Logic ---
+            const downloadPdfBtn = document.getElementById('download-pdf-btn');
+            downloadPdfBtn.addEventListener('click', () => {
+                const resumeElement = document.querySelector('.resume-container');
+                const opt = {
+                    margin:       0.5,
+                    filename:     'Karl_Fox_Resume.pdf',
+                    image:        { type: 'jpeg', quality: 0.98 },
+                    html2canvas:  { scale: 2, useCORS: true },
+                    jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+                };
+                // Use the html2pdf library to generate the PDF
+                html2pdf().from(resumeElement).set(opt).save();
+            });
+        });
+    </script>
+</body>
+</html>
+
